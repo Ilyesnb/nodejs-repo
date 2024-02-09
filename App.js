@@ -26,7 +26,6 @@ const generateRandomName = () =>{
 }
 console.log(generateRandomName());
 const server = http.createServer((req,res)=>{
-    // fs.readFile(path.join(__dirname + "./index.html"));
     let url = req.url
     if(url=== "/"){   
         res.write(generateRandomName())
